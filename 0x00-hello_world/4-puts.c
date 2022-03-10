@@ -4,9 +4,10 @@
 
 #include <stdio.h>
 
-/*
- * Prints "Programming is like building a multilingual puzzle
+/**
+ * 4-puts.c-Prints "Programming is like building a multilingual puzzle
  *
+ * Description: The program uses puts to print a sentence 
  * Return: Always 0.
  */
 int main(void)
