@@ -8,7 +8,7 @@
 int main(void)
 {
 	int num1, num2;
-	
+
 	num1 = 48;
 	num2 = 48;
 
