@@ -9,26 +9,37 @@ int main(void)
 {
 	int num1, num2, num3;
 
-	for (num1 = 0; num1 < 8; num1++)
-	{
-		for (num2 = num1++; num2 < 9; num2++)
-		{
-			for (num3 = num2++; num3 < 10; num3++)
-			{
-				putchar((num1 % 10) + '0');
-				putchar((num2 % 10) + '0');
-				putchar((num3 % 10) + '0');
-				
-				if (num1 == 7 && num2 == 8 && num3 == 9)
-					continue;
+	num1 = 48;
+	num2 = 48;
+	num3 = 48;
 
-				putchar(',');
-				putchar(' ');
+	while (num1 < 58)
+	{
+		num2 = 48;
+		while (num2 < 58)
+		{
+			num3 = 48;
+			while (num3 < 58)
+			{
+				if (num1 != num2 && num1 != num3 && num2 != num3 && num1 < num2 && num2 < num3)
+				{
+					putchar(num1);
+					putchar(num2);
+					putchar(num3);
+
+					if (num1 == 55 && num2 == 56 && num3 == 57)
+						break;
+
+					putchar(',');
+					putchar(' ');
+				}
+				num3++;
 			}
+			num2++;
 		}
+		num1++;
 	}
 
 	putchar('\n');
-
 	return (0);
 }
