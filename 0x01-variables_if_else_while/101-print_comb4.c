@@ -7,37 +7,37 @@
  */
 int main(void)
 {
-	int num1, num2, num3;
+	int i, j, k;
 
-	num1 = 48;
-	num2 = 48;
-	num3 = 48;
+	i = 48;
+	j = 48;
+	k = 48;
 
-	while (num1 < 58)
+	while (i < 58)
 	{
-		num2 = 48;
-		while (num2 < 58)
+		j = 48;
+		while (j < 58)
 		{
-			num3 = 48;
-			while (num3 < 58)
+			k = 48;
+			while (k < 58)
 			{
-				if (num1 != num2 && num1 != num3 && num2 != num3 && num1 < num2 && num2 < num3)
+				if (i != j && i != k && j != k && i < j && j < k)
 				{
-					putchar(num1);
-					putchar(num2);
-					putchar(num3);
+					putchar(i);
+					putchar(j);
+					putchar(k);
 
-					if (num1 == 55 && num2 == 56 && num3 == 57)
+					if (i == 55 && j == 56 && k == 57)
 						break;
 
 					putchar(',');
 					putchar(' ');
 				}
-				num3++;
+				k++;
 			}
-			num2++;
+			j++;
 		}
-		num1++;
+		i++;
 	}
 
 	putchar('\n');
