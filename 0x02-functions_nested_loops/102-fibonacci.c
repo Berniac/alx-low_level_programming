@@ -16,7 +16,7 @@ int main(void)
 	for (i = 0; i < 48; i++)
 	{
 		sum = num1 + num2;
-		printf(" , %ld", sum);
+		printf(", %ld", sum);
 		num1 = num2;
 		num2 = sum;
 	}
