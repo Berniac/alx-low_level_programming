@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line
- * @n: number of times char should be printed
+ * print_diagonal - prints diagonal line
+ * @n: number of times to print character
  * Return: void
  */
 void print_diagonal(int n)
@@ -11,7 +11,7 @@ void print_diagonal(int n)
 
 	for (i = 0; i < n; i++)
 	{
-		for (j = o; j < i; j++)
+		for (j = 0; j < i; j++)
 		{
 			_putchar(' ');
 		}
