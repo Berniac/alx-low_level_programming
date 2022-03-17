@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - checks for a digit
- * @c - input
+ * @c: input
  * Return: 1 if digit, 0 otherwise
  */
 int _isdigit(int c)
