@@ -29,4 +29,3 @@ int _atoi(char *s)
 	oi *= min;
 	return (oi);
 }
-			
