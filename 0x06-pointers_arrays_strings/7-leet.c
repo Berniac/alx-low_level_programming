@@ -18,7 +18,7 @@ char *leet(char *s)
 		{
 			if (*(s + len) == low_lett[i] || *(s + len) == upp_lett[i])
 			{
-				*(s + len) = numbers[i];
+				*(s + len) = nums[i];
 				break;
 			}
 		}
