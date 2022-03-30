@@ -12,7 +12,7 @@ int _check(int n, int g)
 		return (g);
 	if (g * g > n)
 		return (-1);
-	return (_check(n, (g + 1));
+	return (_check(n, (g + 1)));
 }
 
 /**
