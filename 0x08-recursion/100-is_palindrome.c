@@ -25,7 +25,7 @@ int check_palindrome(int l, int r, char *str)
 {
 	if (l >= r)
 		return (1);
-	else if (s[1] != p[r])
+	else if (str[1] != str[r])
 		return (0);
 	else
 		return (check_palindrome(l + 1, r - 1, str));
