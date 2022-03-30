@@ -23,12 +23,13 @@ int _strlen(char *s)
  */
 int check_palindrome(int l, int r, char *str)
 {
-	if (l >= r)
-		return (1);
-	else if (str[1] != str[r])
-		return (0);
-	else
-		return (check_palindrome(l + 1, r - 1, str));
+	if (*(str + l) == *(str + r))
+	{
+		if (l == r || l == r + 1)
+			return (1);
+		return (0 + check_palindrome(l + 1, r - 1, str));
+	}
+	return (0);
 }
 
 /**
@@ -44,4 +45,3 @@ int is_palindrome(char *s)
 	i = _strlen(s) - 1;
 	return (check_palindrome(0, i, s));
 }
-
