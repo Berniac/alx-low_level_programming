@@ -9,11 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1, sum = 0;
+	int i, sum = 0;
 
-	for (; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
-		if (!(argv[i] >= 48 && argv[i] <= 57))
+		if (!(argv[i++] >= 48 && argv[i++] <= 57))
 		{
 			printf("Error\n");
 			return (1);
