@@ -9,7 +9,7 @@
  * @c: initialization character
  * Return: Pointer to the array, NULL if it fails
  */
-char *creat_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	unsigned int i;
