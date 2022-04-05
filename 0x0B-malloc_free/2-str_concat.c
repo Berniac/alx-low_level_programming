@@ -3,7 +3,7 @@
 
 /**
  * str_concat - concatenates 2 strings
- * 
+ *
  * @s1: string 1
  * @s2: string 2
  * Return: Pointer to a newly allocated space
@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 
 	limit = j;
 	for (j = 0; j <= limit; k++, j++)
-		jstr[k] = s2[j];
+		jstr[k + 1] = s2[j];
 
 	return (jstr);
 }
