@@ -41,7 +41,7 @@ char **strtow(char *str)
 	if (aout == NULL || height == 0)
 	{
 		free(aout);
-		return(NULL);
+		return (NULL);
 	}
 	for (i = a1 = 0; i < height; i++)
 	{
