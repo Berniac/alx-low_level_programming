@@ -10,7 +10,7 @@
  * if nmemb or size is 0 then NULL,
  * if it fails, NULL
  */
-coid *_calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *arrmem;
 	unsigned int i;
