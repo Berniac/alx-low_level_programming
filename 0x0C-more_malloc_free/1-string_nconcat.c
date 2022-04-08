@@ -38,10 +38,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (i = 0; i < lsout; i++)
+	{
 		if (i < ls1)
 			str[i] = s1[i];
 		else
 			str[i] = s1[i - ls1];
+	}
 
 	str[i] = '\0';
 
