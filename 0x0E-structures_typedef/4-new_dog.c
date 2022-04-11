@@ -9,7 +9,7 @@
  *
  * Return: dog_t, if it fails NULL.
  */
-dog_t *new_dog(char *name, int age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *the_dog;
 	int i, nlen, olen;
