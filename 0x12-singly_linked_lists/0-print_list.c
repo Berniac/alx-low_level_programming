@@ -9,7 +9,7 @@
 size_t print_list(const list_t *h)
 {
         size_t elem;
-        
+
         elem = 0;
         while (h != NULL)
         {
@@ -20,5 +20,5 @@ size_t print_list(const list_t *h)
                 h = h->next;
                 elem++;
         }
-        retuen (elem);
+        return (elem);
 }
