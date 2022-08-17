@@ -1,0 +1,20 @@
+# multiple rules and call CFLAGS by default
+CC = gcc
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = $(SRC:%.c=%.o)
+RM = rm
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) -f *~ $(NAME)
+
+oclean:
+	$(RM) -f $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
